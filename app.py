@@ -12,6 +12,7 @@ def load_data(csv):
 media = load_data("data/social_media.csv")
 
 fig = plt.figure(figsize=(10, 6))
+plt.title("Social Media Platform Use by Gender")
 bar =sns.countplot(x="platform", hue="gender", data=media)
 for i, container in enumerate(bar.containers):
     bar.bar_label(container, fontsize=10)
