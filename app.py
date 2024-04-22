@@ -7,7 +7,7 @@ def load_data(csv_file):
     return pd.read_csv(csv_file)
 
 # Load the data
-df = load_data('social_media.csv')
+df = load_data('data/social_media.csv')
 
 # Streamlit app title
 st.title('Social Media Analysis')
